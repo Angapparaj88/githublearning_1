@@ -1,35 +1,3 @@
 New File
 HTML code will be added
 
-System.setProperty("webdriver.chrome.driver", "D:\\Selenium_tutorial\\Chrome87\\chromedriver.exe");  
-        
-        // Instantiate a ChromeDriver class.     
-   WebDriver driver=new ChromeDriver();  
-   
-     
-      // Launch Website  
-   driver.navigate().to("http://www.javatpoint.com/");  
-     
-    //Maximize the browser  
-driver.manage().window().maximize();  
-     
-     //Scroll down the webpage by 5000 pixels  
-   JavascriptExecutor js = (JavascriptExecutor)driver;  
-   js.executeScript("scrollBy(0, 5000)");   
-     
-    // Click on the Search button  
-   driver.findElement(By.linkText("Core Java")).click();  
-   driver.findElement(By.linkText("Programs")).click();
-  
-   
-   //Search in Text Box
-  WebElement srch=driver.findElement(By.name("search"));
-  srch.click();
-  srch.sendKeys("Welcome");
-  WebElement btn=driver.findElement(By.xpath("//*[@id='___gcse_0']/div/div/form/table/tbody/tr/td[2]/button"));
-   btn.click();
-  System.out.println("Execution Completed");
-
-/* srch=driver.findElement(By.name("search"));
-		btn=driver.findElement(By.xpath("//*[@id='___gcse_0']/div/div/form/table/tbody/tr/td[2]/button"));
-		link1=driver.findElement(By.xpath("//*[@id=\'___gcse_0\']/div/div/div/div[5]/div[2]/div/div/div[1]/div[1]/div[1]/div[1]/div"));*/
